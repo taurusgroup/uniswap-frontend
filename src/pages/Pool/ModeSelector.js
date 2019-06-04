@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 
 import OversizedPanel from '../../components/OversizedPanel'
-import Dropdown from '../../assets/images/dropdown-blue.svg'
+import Dropdown from '../../assets/images/taurus/dropdown.svg'
 import Modal from '../../components/Modal'
 import { useBodyKeyDown } from '../../hooks'
 
@@ -32,7 +32,7 @@ const LiquidityContainer = styled.div`
   font-size: 0.75rem;
   padding: 0.625rem 1rem;
   font-size: 0.75rem;
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
   font-weight: 500;
   cursor: pointer;
 
@@ -66,7 +66,7 @@ const StyledNavLink = styled(NavLink).attrs({
     border-radius: 3rem;
     box-shadow: 0 0 0.5px 0.5px ${({ theme }) => theme.mercuryGray};
     font-weight: 500;
-    color: ${({ theme }) => theme.royalBlue};
+    color: ${({ theme }) => theme.taurusMain};
   }
 `
 

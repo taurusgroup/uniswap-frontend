@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import DropdownBlue from '../../assets/images/dropdown-blue.svg'
-import DropupBlue from '../../assets/images/dropup-blue.svg'
+import DropdownBlue from '../../assets/images/taurus/dropdown.svg'
+import DropupBlue from '../../assets/images/taurus/dropup.svg'
 
 const SummaryWrapper = styled.div`
   color: ${({ error, theme }) => (error ? theme.salmonRed : theme.doveGray)};
@@ -23,7 +23,7 @@ const Details = styled.div`
 
 const SummaryWrapperContainer = styled.div`
   ${({ theme }) => theme.flexRowNoWrap};
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
   text-align: center;
   margin-top: 1rem;
   padding-top: 1rem;

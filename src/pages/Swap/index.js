@@ -9,7 +9,7 @@ import { Button } from '../../theme'
 import CurrencyInputPanel from '../../components/CurrencyInputPanel'
 import NewContextualInfo from '../../components/ContextualInfoNew'
 import OversizedPanel from '../../components/OversizedPanel'
-import ArrowDownBlue from '../../assets/images/arrow-down-blue.svg'
+import ArrowDownBlue from '../../assets/images/taurus/arrow-down.svg'
 import ArrowDownGrey from '../../assets/images/arrow-down-grey.svg'
 import { amountFormatter, calculateGasMargin } from '../../utils'
 import { useExchangeContract } from '../../hooks'
@@ -36,7 +36,7 @@ const DEADLINE_FROM_NOW = 60 * 15
 const GAS_MARGIN = ethers.utils.bigNumberify(1000)
 
 const BlueSpan = styled.span`
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
 `
 
 const LastSummaryText = styled.div`

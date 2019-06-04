@@ -42,10 +42,10 @@ const theme = {
   black: '#000000',
   // grays
   concreteGray: '#FAFAFA',
-  mercuryGray: '#E1E1E1',
+  mercuryGray: '#31333F',
   silverGray: '#C4C4C4',
   chaliceGray: '#AEAEAE',
-  doveGray: '#737373',
+  doveGray: '#31333F', // '#737373',
   mineshaftGray: '#2B2B2B',
   // blues
   zumthorBlue: '#EBF4FF',
@@ -67,7 +67,10 @@ const theme = {
   mediaHeight: mediaHeightTemplates,
   // css snippets
   flexColumnNoWrap,
-  flexRowNoWrap
+  flexRowNoWrap,
+  // taurus colors
+  taurusMain: '#08B3CA',
+  taurusGrey: '#31333F'
 }
 
 export default function ThemeProvider({ children }) {
@@ -90,6 +93,9 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: Work Sans,sans-serif;
+    font-size: 14px;
+    font-weight: 300;
   }
 
   #root {

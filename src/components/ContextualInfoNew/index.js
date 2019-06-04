@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import { transparentize } from 'polished'
 
-import { ReactComponent as Dropup } from '../../assets/images/dropup-blue.svg'
-import { ReactComponent as Dropdown } from '../../assets/images/dropdown-blue.svg'
+import { ReactComponent as Dropup } from '../../assets/images/taurus/dropup.svg'
+import { ReactComponent as Dropdown } from '../../assets/images/taurus/dropdown.svg'
 
 const SummaryWrapper = styled.div`
   color: ${({ error, theme }) => (error ? theme.salmonRed : theme.doveGray)};
@@ -15,7 +15,7 @@ const SummaryWrapper = styled.div`
 
 const SummaryWrapperContainer = styled.div`
   ${({ theme }) => theme.flexRowNoWrap};
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
   text-align: center;
   margin-top: 1rem;
   padding-top: 1rem;

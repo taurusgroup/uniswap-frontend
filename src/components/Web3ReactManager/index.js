@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { isMobile } from 'react-device-detect'
 
 import { Spinner } from '../../theme'
-import Circle from '../../assets/images/circle.svg'
+import Circle from '../../assets/images/taurus/circle.svg'
 
 const { Connector } = Connectors
 

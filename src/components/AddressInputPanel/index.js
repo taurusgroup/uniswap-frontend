@@ -9,7 +9,7 @@ import { useDebounce } from '../../hooks'
 
 const InputPanel = styled.div`
   ${({ theme }) => theme.flexColumnNoWrap}
-  box-shadow: 0 4px 8px 0 ${({ theme }) => lighten(0.9, theme.royalBlue)};
+  box-shadow: 0 4px 8px 0 ${({ theme }) => lighten(0.1, theme.taurusGrey)};
   position: relative;
   border-radius: 1.25rem;
   background-color: ${({ theme }) => theme.white};

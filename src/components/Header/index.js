@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Link } from '../../theme'
 import Web3Status from '../Web3Status'
 import { darken } from 'polished'
+import logo from '../../assets/images/taurus/taurus-logo.svg'
 
 const HeaderElement = styled.div`
   margin: 1.25rem;
@@ -40,13 +41,7 @@ export default function Header() {
     <>
       <HeaderElement>
         <Title>
-          <span id="image" role="img" aria-label="Unicorn Emoji">
-            🦄
-          </span>
-
-          <Link id="link" href="https://uniswap.io">
-            <h1 id="title">Uniswap</h1>
-          </Link>
+          <img src={logo} />
         </Title>
       </HeaderElement>
 

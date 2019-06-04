@@ -9,7 +9,7 @@ import { Button } from '../../theme'
 import CurrencyInputPanel from '../../components/CurrencyInputPanel'
 import ContextualInfo from '../../components/ContextualInfo'
 import OversizedPanel from '../../components/OversizedPanel'
-import ArrowDownBlue from '../../assets/images/arrow-down-blue.svg'
+import ArrowDownBlue from '../../assets/images/taurus/arrow-down.svg'
 import ArrowDownGrey from '../../assets/images/arrow-down-grey.svg'
 import { useExchangeContract } from '../../hooks'
 import { useTransactionAdder } from '../../contexts/Transactions'
@@ -27,7 +27,7 @@ const DEADLINE_FROM_NOW = 60 * 15
 const GAS_MARGIN = ethers.utils.bigNumberify(1000)
 
 const BlueSpan = styled.span`
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
 `
 
 const DownArrowBackground = styled.div`

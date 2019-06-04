@@ -23,8 +23,8 @@ const GAS_MARGIN = ethers.utils.bigNumberify(1000)
 const SubCurrencySelect = styled.button`
   ${({ theme }) => theme.flexRowNoWrap}
   background: ${({ theme }) => theme.zumthorBlue};
-  border: 1px solid ${({ theme }) => theme.royalBlue};
-  color: ${({ theme }) => theme.royalBlue};
+  border: 1px solid ${({ theme }) => theme.taurusMain};
+  color: ${({ theme }) => theme.taurusMain};
   line-height: 0;
   height: 2rem;
   padding: 10px 50px 10px 15px;
@@ -54,9 +54,9 @@ const StyledBorderlessInput = styled(BorderlessInput)`
 const CurrencySelect = styled.button`
   align-items: center;
   font-size: 1rem;
-  color: ${({ selected, theme }) => (selected ? theme.black : theme.royalBlue)};
+  color: ${({ selected, theme }) => (selected ? theme.black : theme.taurusMain)};
   height: 2rem;
-  border: 1px solid ${({ selected, theme }) => (selected ? theme.mercuryGray : theme.royalBlue)};
+  border: 1px solid ${({ selected, theme }) => (selected ? theme.mercuryGray : theme.taurusMain)};
   border-radius: 2.5rem;
   background-color: ${({ selected, theme }) => (selected ? theme.concreteGray : theme.zumthorBlue)};
   outline: none;
@@ -65,7 +65,7 @@ const CurrencySelect = styled.button`
 
   :hover {
     border: 1px solid
-      ${({ selected, theme }) => (selected ? darken(0.1, theme.mercuryGray) : darken(0.1, theme.royalBlue))};
+      ${({ selected, theme }) => (selected ? darken(0.1, theme.mercuryGray) : darken(0.1, theme.taurusMain))};
   }
 
   :focus {
@@ -88,13 +88,13 @@ const StyledDropDown = styled(DropDown)`
   height: 35%;
 
   path {
-    stroke: ${({ selected, theme }) => (selected ? theme.black : theme.royalBlue)};
+    stroke: ${({ selected, theme }) => (selected ? theme.black : theme.taurusGrey)};
   }
 `
 
 const InputPanel = styled.div`
   ${({ theme }) => theme.flexColumnNoWrap}
-  box-shadow: 0 4px 8px 0 ${({ theme }) => lighten(0.9, theme.royalBlue)};
+  box-shadow: 0 4px 8px 0 ${({ theme }) => darken(0.1, theme.taurusGrey)};
   position: relative;
   border-radius: 1.25rem;
   background-color: ${({ theme }) => theme.white};

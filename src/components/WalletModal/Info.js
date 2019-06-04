@@ -7,7 +7,7 @@ import { Link, Spinner } from '../../theme'
 import Copy from './Copy'
 
 import { Check } from 'react-feather'
-import Circle from '../../assets/images/circle.svg'
+import Circle from '../../assets/images/taurus/circle.svg'
 
 import { transparentize } from 'polished'
 
@@ -42,24 +42,24 @@ const TransactionStatusText = styled.span`
 
 const TransactionState = styled.div`
   background-color: ${({ pending, theme }) =>
-    pending ? transparentize(0.95, theme.royalBlue) : transparentize(0.95, theme.connectedGreen)};
+    pending ? transparentize(0.95, theme.taurusMain) : transparentize(0.95, theme.connectedGreen)};
   border-radius: 1.5rem;
   padding: 0.5rem 0.75rem;
   font-weight: 500;
   font-size: 0.75rem;
   border: 1px solid;
   border-color: ${({ pending, theme }) =>
-    pending ? transparentize(0.75, theme.royalBlue) : transparentize(0.75, theme.connectedGreen)};
+    pending ? transparentize(0.75, theme.taurusMain) : transparentize(0.75, theme.connectedGreen)};
 
   :hover {
     border-color: ${({ pending, theme }) =>
-      pending ? transparentize(0, theme.royalBlue) : transparentize(0, theme.connectedGreen)};
+      pending ? transparentize(0, theme.taurusMain) : transparentize(0, theme.connectedGreen)};
   }
 `
 
 const ButtonWrapper = styled.div`
   a {
-    color: ${({ pending, theme }) => (pending ? theme.royalBlue : theme.connectedGreen)};
+    color: ${({ pending, theme }) => (pending ? theme.taurusMain : theme.connectedGreen)};
   }
 `
 

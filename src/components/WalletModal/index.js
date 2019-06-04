@@ -98,7 +98,7 @@ const TransactionListWrapper = styled.div`
 `
 
 const StyledLink = styled(Link)`
-  color: ${({ hasENS, isENS, theme }) => (hasENS ? (isENS ? theme.royalBlue : theme.doveGray) : theme.royalBlue)};
+  color: ${({ hasENS, isENS, theme }) => (hasENS ? (isENS ? theme.taurusMain : theme.doveGray) : theme.taurusMain)};
 `
 
 // function getErrorMessage(event) {

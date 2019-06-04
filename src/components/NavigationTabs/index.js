@@ -82,11 +82,11 @@ const StyledNavLink = styled(NavLink).attrs({
   font-size: 1rem;
 
   &.${activeClassName} {
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.mercuryGray};
     border-radius: 3rem;
     box-shadow: 0 0 0.5px 1px ${({ theme }) => theme.mercuryGray};
     font-weight: 500;
-    color: ${({ theme }) => theme.royalBlue};
+    color: ${({ theme }) => theme.taurusMain};
     :hover {
       box-shadow: 0 0 0.5px 1px ${({ theme }) => darken(0.1, theme.mercuryGray)};
     }
@@ -95,7 +95,7 @@ const StyledNavLink = styled(NavLink).attrs({
   :hover,
   :focus {
     font-weight: 500;
-    color: ${({ theme }) => darken(0.1, theme.royalBlue)};
+    color: ${({ theme }) => darken(0.1, theme.taurusMain)};
   }
 `
 
@@ -130,14 +130,14 @@ function NavigationTabs({ location: { pathname }, history }) {
           </StyledNavLink>
         ))}
       </Tabs>
-      {showBetaMessage && (
-        <BetaMessage onClick={dismissBetaMessage}>
-          <span role="img" aria-label="warning">
-            💀
-          </span>{' '}
-          {t('betaWarning')}
-        </BetaMessage>
-      )}
+      {/*{showBetaMessage && (*/}
+      {/*  <BetaMessage onClick={dismissBetaMessage}>*/}
+      {/*    <span role="img" aria-label="warning">*/}
+      {/*      💀*/}
+      {/*    </span>{' '}*/}
+      {/*    {t('betaWarning')}*/}
+      {/*  </BetaMessage>*/}
+      {/*)}*/}
     </>
   )
 }

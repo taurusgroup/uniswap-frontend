@@ -37,7 +37,7 @@ const DEADLINE_FROM_NOW = 60 * 15
 const GAS_MARGIN = ethers.utils.bigNumberify(1000)
 
 const BlueSpan = styled.span`
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
 `
 
 const DownArrowBackground = styled.div`

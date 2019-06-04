@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import { lighten, darken } from 'polished'
 
 export const Button = styled.button.attrs(({ warning, theme }) => ({
-  backgroundColor: warning ? theme.salmonRed : theme.royalBlue
+  backgroundColor: warning ? theme.salmonRed : theme.taurusMain
 }))`
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 3rem;
@@ -28,6 +28,7 @@ export const Button = styled.button.attrs(({ warning, theme }) => ({
   :disabled {
     background-color: ${({ theme }) => theme.mercuryGray};
     cursor: auto;
+    color: ${({ theme }) => theme.chaliceGray};
   }
 `
 
@@ -37,7 +38,7 @@ export const Link = styled.a.attrs({
 })`
   text-decoration: none;
   cursor: pointer;
-  color: ${({ theme }) => theme.royalBlue};
+  color: ${({ theme }) => theme.taurusMain};
 
   :focus {
     outline: none;

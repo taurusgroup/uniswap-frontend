@@ -12,7 +12,7 @@ import { useENSName } from '../../hooks'
 import WalletModal from '../WalletModal'
 import { useAllTransactions } from '../../contexts/Transactions'
 import { Spinner } from '../../theme'
-import Circle from '../../assets/images/circle.svg'
+import Circle from '../../assets/images/taurus/circle.svg'
 
 const { Connector } = Connectors
 
@@ -42,28 +42,28 @@ const Web3StatusError = styled(Web3StatusGeneric)`
 `
 
 const Web3StatusConnect = styled(Web3StatusGeneric)`
-  background-color: ${({ theme }) => theme.royalBlue};
+  background-color: ${({ theme }) => theme.taurusMain};
   color: ${({ theme }) => theme.white};
-  border: 1px solid ${({ theme }) => theme.royalBlue};
+  border: 1px solid ${({ theme }) => theme.taurusMain};
   font-weight: 500;
   :hover,
   :focus {
-    background-color: ${({ theme }) => darken(0.1, theme.royalBlue)};
+    background-color: ${({ theme }) => darken(0.1, theme.taurusMain)};
   }
 `
 
 const Web3StatusConnected = styled(Web3StatusGeneric)`
   background-color: ${({ pending, theme }) => (pending ? theme.zumthorBlue : theme.white)};
-  color: ${({ pending, theme }) => (pending ? theme.royalBlue : theme.doveGray)};
-  border: 1px solid ${({ pending, theme }) => (pending ? theme.royalBlue : theme.mercuryGray)};
+  color: ${({ pending, theme }) => (pending ? theme.taurusMain : theme.doveGray)};
+  border: 1px solid ${({ pending, theme }) => (pending ? theme.taurusMain : theme.mercuryGray)};
   font-weight: 400;
   :hover {
     background-color: ${({ pending, theme }) =>
-      pending ? transparentize(0.9, theme.royalBlue) : transparentize(0.9, theme.mercuryGray)};
+      pending ? transparentize(0.9, theme.taurusMain) : transparentize(0.9, theme.mercuryGray)};
   }
   :focus {
     border: 1px solid
-      ${({ pending, theme }) => (pending ? darken(0.1, theme.royalBlue) : darken(0.1, theme.mercuryGray))};
+      ${({ pending, theme }) => (pending ? darken(0.1, theme.taurusMain) : darken(0.1, theme.mercuryGray))};
   }
 `
 
